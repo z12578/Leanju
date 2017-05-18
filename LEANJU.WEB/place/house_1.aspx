@@ -347,7 +347,6 @@
                 var Hno = v['Hno'];
                 function get() {
                     var Ostate;
-                    var CurTime = new Date();
                     var Intime = $('#dy').datebox('getValue');
                     var startDate = new Date(Intime.replace(/\-/g, '/'));
                     var Outtime = $('#de').datebox('getValue');
@@ -355,49 +354,43 @@
                     var timeks = new Date(Intime);
                     var timejs = new Date(Outtime);
                     var timediff = (timejs - timeks) / (1000 * 60 * 60 * 24);
-                    if (startDate > CurTime)
-                    {
-                        $('#error').html("入住时间不能早于今天。。。。");
-                        $('#days').html('0');
-                    }
-                    else if (startDate > endDate) {
+                    if (startDate > endDate) {
                         $('#error').html("入住时间不能大于退房时间。。。。");
                         $('#days').html('0');
-                    }
-                    else
-                    {
+
+                    } else {
                         $('#days').html(timediff);
                         Ostate = "待入住";
                         
-                        $.ajax({
-                            url: 'house_1.aspx?action=add',
-                            type: 'GET', //GET
-                            //async: true,    //或false,是否异步
-                            data: {
-                                Landlord: '罗成', Rno: '001', Intime: Intime, Outtime: Outtime, Price: 2388 * timediff, Ostate: Ostate
-                            },
-                            timeout: 5000,    //超时时间
-                            dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
+                        //$.ajax({
+                        //    url: 'house_1.aspx?action=add',
+                        //    type: 'GET', //GET
+                        //    //async: true,    //或false,是否异步
+                        //    data: {
+                        //        Landlord: '罗成', Rno: '001', Intime: Intime, Outtime: Outtime, Price: 2388 * timediff, Ostate: Ostate
+                        //    },
+                        //    timeout: 5000,    //超时时间
+                        //    dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
 
-                            success: function (data) {
-                                if (data == '1') {
-                                    $('#error').html("预定成功");
-                                    //window.location.href = "index.aspx";
+                        //    success: function (data) {
+                        //        if (data == '1') {
+                        //            $('#error').html("预定成功");
+                        //            //window.location.href = "index.aspx";
 
-                                }
-                                else {
-                                    $('#error').html("预定失败");
-                                }
-                            },
-                            error: function (xhr, textStatus) {
-                                console.log('错误');
-                                console.log(xhr);
-                                console.log(textStatus);
-                            },
-                            complete: function () {
-                                console.log('结束')
-                            }
-                        })
+                        //        }
+                        //        else {
+                        //            $('#error').html("预定失败");
+                        //        }
+                        //    },
+                        //    error: function (xhr, textStatus) {
+                        //        console.log('错误');
+                        //        console.log(xhr);
+                        //        console.log(textStatus);
+                        //    },
+                        //    complete: function () {
+                        //        console.log('结束')
+                        //    }
+                        //})
 
 
 
