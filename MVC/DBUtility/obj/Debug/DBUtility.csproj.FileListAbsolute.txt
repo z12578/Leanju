@@ -1,0 +1,14 @@
+E:\@毕业设计\LEANJU\MVC\DBUtility\bin\Debug\LEANJU.DBUtility.dll
+E:\@毕业设计\LEANJU\MVC\DBUtility\bin\Debug\LEANJU.DBUtility.pdb
+E:\@毕业设计\LEANJU\MVC\DBUtility\bin\Debug\MySql.Data.dll
+E:\@毕业设计\LEANJU\MVC\DBUtility\bin\Debug\System.Data.SQLite.DLL
+E:\@毕业设计\LEANJU\MVC\DBUtility\obj\Debug\LEANJU.DBUtility.dll
+E:\@毕业设计\LEANJU\MVC\DBUtility\obj\Debug\LEANJU.DBUtility.pdb
+E:\@毕业设计\LEANJU\MVC\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\ZB\Desktop\LEANJU\MVC\DBUtility\bin\Debug\LEANJU.DBUtility.dll
+C:\Users\ZB\Desktop\LEANJU\MVC\DBUtility\bin\Debug\LEANJU.DBUtility.pdb
+C:\Users\ZB\Desktop\LEANJU\MVC\DBUtility\bin\Debug\MySql.Data.dll
+C:\Users\ZB\Desktop\LEANJU\MVC\DBUtility\bin\Debug\System.Data.SQLite.DLL
+C:\Users\ZB\Desktop\LEANJU\MVC\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\ZB\Desktop\LEANJU\MVC\DBUtility\obj\Debug\LEANJU.DBUtility.dll
+C:\Users\ZB\Desktop\LEANJU\MVC\DBUtility\obj\Debug\LEANJU.DBUtility.pdb

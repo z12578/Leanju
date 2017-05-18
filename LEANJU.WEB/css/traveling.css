@@ -1,0 +1,388 @@
+﻿@charset "utf-8";
+/* 构架 */
+.wrapper{width:980px;margin:0 auto;overflow:hidden;}
+.clear{clear:both;height:0;line-height:0;font-size:0;overflow:hidden;}
+.TextCenter{ text-align:center;}/*2015-06-10zj*/
+/* 历史行程 */
+.travel_ls{width:914px;}
+.travel_ls .headings{font-weight:bold;font-size:14px;text-align:center;}
+.travel_ls .status,.travel_ls .location,.travel_ls .host,.travel_ls .dates,.travel_ls .options,.travel_ls .m_user,.travel_ls .location2,.travel_ls .outbox{padding:10px 0;border-bottom:1px solid #E7E7E7;}
+.travel_ls .hlocation2,.travel_ls .hm_user,.travel_ls .hlocation,.travel_ls .hhost{padding:10px 0;border-bottom:1px solid #E7E7E7;}
+.travel_ls .hlocation2{width:200px;padding-right:100px;}
+.travel_ls .hm_user{width:260px;padding-right:100px;}
+.travel_ls .hlocation{width:200px;padding-right:60px;}
+.travel_ls .hhost{width:160px;padding-right:50px;}
+.travel_ls .status{width:100px;}
+.travel_ls .location{width:260px;}
+.travel_ls .location2{width:300px;}
+.travel_ls .host{width:210px;}
+.travel_ls .dates{width:190px;}
+.travel_ls_qx,.travel_ls_js,.travel_ls_fk,.travel_ls_qr{height:20px;line-height:20px;color:#fff;padding:1px 5px;border-radius:3px 3px 3px 3px;}
+.travel_ls_qx{background:#E51E18;}
+.travel_ls_js{background:#0C6;}
+.travel_ls_fk{background:#EE8D00;}
+.travel_ls_qr{background:#CCCC00;}
+.travel_ls_btns{margin-top:5px;overflow:hidden;position:relative;}
+.travel_ls_btns a,.travel_ls_btns a:visited{background:-moz-linear-gradient(center top , white, #EFEFEF) repeat scroll 0 0 transparent;border-color:#BFBFBF;border-style:solid;border-width:1px 1px 0;box-shadow:0 0 2px 2px rgba(255, 255, 255, 0.5), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;cursor:pointer;display:block;font-weight:bold;padding:2px;text-align:center;text-shadow:0 1px 0 white;text-transform:uppercase;border-radius:3px 3px 3px 3px;border-bottom:1px solid #aaa;}
+.travel_ls_btns a:hover{background:#efefef;border-color:#BFBFBF;border-style:solid;border-width:1px 1px 0;box-shadow:0 0 2px 2px rgba(255, 255, 255, 0.5), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;cursor:pointer;display:block;font-weight:bold;padding:2px;text-align:center;text-shadow:0 1px 0 white;text-transform:uppercase;border-radius:3px 3px 3px 3px;text-decoration:none;border-bottom:1px solid #aaa;}
+.travel_ls_page{width:100%;margin-top:10px;overflow:hidden;}/*2015-06-10xg*/
+.travel_ls_btns.send{width:90px;}
+.travel_ls_btns .open{width:10px;height:6px;background:url(http://js.youtx.com/payment/images/icon_open_close_1.gif) no-repeat;position:absolute;top:8px;right:22px;}
+.travel_ls_btns .close{width:10px;height:6px;background:url(http://js.youtx.com/payment/images/icon_open_close_2.gif) no-repeat;position:absolute;top:8px;right:22px;}
+.outbox{padding:10px 0;border-bottom:1px solid #E7E7E7;width:900px;overflow:hidden;}
+.paddingr1{padding-right:20px;}
+.HistoryOrder{ display:block;}
+/*2015-06-10zj*/
+.more_msg{height:24px; line-height:24px;background-color:#EFEFEF;padding:0 10px; margin-top:10px;float:right}
+/*2015-06-10zj*/
+/*订单管理*/
+.travel_ls .m_user{width:360px;}
+.travel_ls .m_user .intro{float:left;}
+.travel_ls .m_user img{float:left;width:48px;height:48px;border:1px solid #e0e0e0;margin:0 10px;display:inline;}
+.travel_ls_page .more_link{float:right;}
+.print a,.print a:visited{display:block;float:right;padding:5px 20px;border:1px solid #e1e1e1;background:-moz-linear-gradient(center top , white, #EFEFEF) repeat scroll 0 0 transparent;box-shadow:0 0 2px 2px rgba(255, 255, 255, 0.5), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;border-radius:3px 3px 3px 3px;}
+.print a:hover{text-decoration:none;background:#efefef;border:1px solid #BFBFBF;box-shadow:0 0 2px 2px rgba(255, 255, 255, 0.5), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;text-shadow:0 1px 0 white;text-transform:uppercase;text-decoration:none;border-bottom:1px solid #aaa;}
+.print a span{float:left;display:block;width:20px;height:16px;background:url(http://js.youtx.com/payment/images/print_icon.gif) 0 center no-repeat;}
+.no_orderbox{height:200px;padding:10px 40px;font-size:14px;font-weight:800;}
+h1.no_order{color:#000;font-size:14px;font-weight:800;}
+.no_orderRecent{color:#000;font-size:14px;font-weight:800;}/*2015-06-10zj*/
+.no_orderbox p{padding-top:8px;}
+/* 当前行程 */
+.post_icon{position:absolute;top:0;left:50px;width:19px;height:32px;background:url(http://js.youtx.com/payment/images/19-32gps.gif) no-repeat;}
+.travel_ls_left{width:460px;float:left;}
+.travel_ls_right{width:440px;float:left;}
+.travel_ls_left .content{margin-bottom:10px;font-size:14px;}
+.travel_ls_left .content h1{font-size:24px;font-weight:800;color:#000;padding-bottom:10px;}/*20110906*/
+.travel_ls_left .content span{padding-right:10px;}/*20110906*/
+.travel_ls_left .content p{line-height:20px;color:#5b5b5b;}
+.travel_ls_left .content p.time{font-size:16px;padding:5px 0;font-weight:800;}
+.travel_ls_left .content span.codition{font-size:12px;color:#7f7f77;}
+.itembox{margin-top:25px;}
+.itembox h2{font-size:18px;color:#dd0078;margin-bottom:8px;position:relative;}
+.itembox h2 .post_icon{top:-14px;left:50px;}
+.itembox p.line-height{line-height:18px;font-size:14px;}
+.itembox .textstyle{height:20px;line-height:20px;border:1px solid #7f9db9;color:#bbbbbb;padding:0 4px;}
+.itembox .textstyle.width1{width:270px;}
+.itembox .textstyle.width2{width:405px;}
+.itembox .textstyle.active{color:#000;}
+.wordleft{float:left;padding-top:3px;*padding-top:8px;padding-top:8px\9;padding-right:6px;}
+.travel_ls_right .travel_map{position:relative;}
+/*搜索*/
+#search_bar {width: 430px;margin-top:8px;}
+#search_bar #location {-moz-border-bottom-colors: none;-moz-border-image: none;-moz-border-left-colors: none;-moz-border-right-colors: none;-moz-border-top-colors: none;border-bottom-right-radius: 0;border-color: #C1BFA0;border-style: solid;border-top-right-radius: 0;border-width: 2px 0 2px 2px;box-shadow: 0 0 2px #C1BFA0 inset;color: #E0007A;display: block;float: left;font-family: inherit;font-size: 20px;font-weight: bold;height: 28px;line-height: 24px;padding: 6px 0 4px 10px;width: 298px;}
+.rounded_left {border-bottom-left-radius: 5px;border-top-left-radius: 5px;}
+#search_bar #submit_location {float:left;border-bottom-left-radius: 0;border-top-left-radius: 0;width: 120px;}
+.v3_button {background:url(http://js.youtx.com/payment/images/post_btn.png) repeat-x scroll 0 0 transparent;border: 1px solid #85AA40;border-radius: 7px 7px 7px 7px;color: #FFFFFF !important;cursor: pointer;font-family: Arial,Helvetica,Tahoma;font-size: 18px;font-weight: bold;height: 42px;padding: 5px 28px;text-align: center;text-shadow: 0 -1px 1px #797979;width: auto;}
+.v3_button:hover {box-shadow: 0 0 6px #B9B9B9;}
+.v3_button:active {background-color: #748E2B;background-image: none;color: #EEEEEE !important;}
+/*modify*/
+.blue{color:#0087D2;}
+.ie6blank{height:0px;overflow:hidden;}
+.mycenter_main.m_c_p{*margin-top:10px;}
+.modifybox .p_15{margin-top:15px;}
+.modifybox .modify_title{margin-bottom:20px;}
+.modifybox h2{font-size:22px;font-weight:800;color:#dd0078;}
+.modifybox h3.bold{font-size:14px;font-weight:800;color:#dd0078;margin-bottom:6px;}
+.modifybox h3{font-size:14px;color:#dd0078;}
+.modifybox ul.modify{clear:both;margin-bottom:20px;width:900px;}
+.modifybox ul.modify li{float:left;padding:1px 0;}
+.modifybox ul.chancel{margin-bottom:25px;}
+.modifybox ul li.label{width:15%;}
+.modifybox ul li.m_content{width:85%;}
+.modifybox p{line-height:18px;}
+.modifybox p.p_p{padding-bottom:12px;}
+.modifybox .modify_btn_box{margin-top:20px;}
+.modifybox .modify_btn{padding:2px 5px;*padding:0;line-height:18px;}
+.modifybox .time_width{width:105px;}
+.modifybox .chancel_tab{border-top:1px solid #aca899;padding:20px 0;margin-top:20px;}/*20110919*/ 
+.modifybox ul.reason li{padding-top:5px;}
+.modifybox .chancel_tab .areastyle{width:505px;height:80px;}
+.modifybox ul.c_condation{margin:15px 0;}
+.modifybox ul.c_condation li{padding-top:5px;}
+.modifybox ul.refund{padding:5px 0;}
+.modifybox ul.refund li{padding:2px 0;padding-left:15px;background:url(http://js.youtx.com/payment/images/dian.jpg) 2px 5px no-repeat;}/*20110919*/ 
+.red{color:#f00}
+.chancel li img{vertical-align:middle;}
+/*traveling_sure*/
+.left{float:left;}
+.blank_print{margin:20px 20px 0 0 ;}
+.smalllink{font-size:12px;font-weight:normal;}
+.blank_bg{margin:30px 0;color:#000;}
+.blank_bg dt{font-size:16px;font-weight:800;border-bottom:2px solid #000000;margin-top:15px;padding:0 5px;}
+.blank_bg dt span{color:#f00;font-size:13px;}
+.blank_bg dd{padding:5px;}
+.blank_bg .map_box{width:150px;height:150px;float:left;overflow:hidden;margin-right:10px;display:inline;}
+.blank_bg dd dl{line-height:20px;}
+.blank_bg dd dt{float:left;width:170px;font-size:12px;border:none;padding:0;margin:0;}
+.blank_bg dd dd{float:left;width:800px;padding:0;}
+.blank_bg p{padding-top:20px;}
+.blank_bg dd li{line-height:18px;}
+.blank_bg .padding_top15{padding-top:15px;}
+/*2011-11-14*/
+.travel_ls .location_14{width:340px;padding:10px 5px;}
+.location_15{border-bottom:1px solid #E7E7E7;}
+.location_15 div{line-height:17px;height:17px;}
+.travel_ls .m_user14{width:200px;}
+.btn014 input{background:url(http://js.youtx.com/payment/images/ico_014.gif) no-repeat;width:60px;height:22px;text-align:center;cursor:pointer;border:none;color:#fff;}
+.btn014{position:relative;margin-bottom:5px;}/*2012-3-28新订单管理页面样式*/
+.chakan{background:url(http://js.youtx.com/payment/images/ico_015.gif) no-repeat;width:17px;height:17px;display:inline-block;vertical-align: middle;margin-left:5px;}/*2012-3-28新订单管理页面样式*/
+.btn015 input{background:url(http://js.youtx.com/payment/images/ico_0161.gif.gif) no-repeat;width:96px;height:26px;line-height:26px;font-size:12px;cursor:pointer;border:none;color:#fff;}/*2012-3-28新订单管理页面样式*/
+.LinkToInput{background:url(http://js.youtx.com/payment/images/ico_0161.gif.gif) no-repeat;height:24px;line-height:24px;color:#fff;padding:1px 5px;text-align:center;display:inline-block;margin-bottom:5px;width:87px;}
+/*2011-10-26*/
+.btn015 input{background:url(http://js.youtx.com/payment/images/ico_0161.gif.gif) no-repeat;width:96px;height:26px;line-height:26px;font-size:12px;}
+.travel_ls .status{width:10%;}
+.travel_ls .hlocation2{width:30.5%;text-align:left;padding-left:0.5%;}
+.travel_ls .hlocation3{width:17%;border-bottom:1px solid #E7E7E7;text-align:left;}
+.travel_ls .hm_user{width:27%;text-align:left;padding-left:1%;}
+.travel_ls .location_14,.travel_ls .m_user14,.travel_ls .m_user,.travel_ls .location{width:auto;}
+.time_inf{padding-top:8px;}
+.travel_ls .location_14,.travel_ls .location{padding:10px 20px 10px 5px}
+.mycenter_smalltitle2,.mycenter_bigtitle_nav{background-image:none!important;}
+.mycenter_smalltitle li a:hover{color:#000!important;}
+.mycenter_bigtitle_nav .active a{color:#434D51!important;}
+.prompt{line-height:20px;color:red;text-align:center;padding-top:5px;font-weight:bold; }
+/*2011年11月24日修改（添加评价奖励游天下币提示）*/
+.optionsPingJia{position:relative;width:100%;}
+.pingJiaTiShi{position:absolute;top:-34px;right:-16px; white-space:nowrap;width:auto;z-index:3;background-color:#FDFEBA;border:1px solid #FFCC66;padding:2px 3px;}/*2012-3-28新订单管理页面样式*/
+.travel_ls .options02{padding:0;}
+.pingJiaTiShi b{position:absolute;top:22px;right:70px;}
+/*2011年12月14日修改（添加抵值劵）*/
+.location_Payment{background:url(http://js.youtx.com/payment/images/bg001.gif) no-repeat;padding:0 5px 0 109px;border:1px solid #84ad37;line-height:18px;height:18px;background-color:#fff;color:red;float:left;white-space:nowrap;}
+/*2012年1月6日修改(取消订单-选择退款方式)*/
+.modifybox dl{ padding-left:15px;}
+.modifybox dl dt{ font-size:14px; margin:15px 0}
+.modifybox dl dd{ margin:10px 0}
+.modifybox dl dd input{ vertical-align:-2px; margin:0 10px 0 20px}
+.modifybox dl dd span{ display:inline-block;}
+.modifybox dl dd span.s1{ width:140px;}
+.modifybox dl dd span.s2{ padding:2px 5px; border:1px solid #ccc; background:#f5f5f5; color:#666}
+/*2012-2-1添加我是房东-订单管理提示*/
+.TravelTs{background-color:#ffc;width:880px;height:30px;padding:0 15px;border:1px solid #ddc88e;border-radius: 5px 5px 5px 5px;}/*2012-3-28新订单管理页面样式*/
+.TravelTs a.LinkA{padding-left:40px;line-height:30px;}/*2012-3-28新订单管理页面样式*/
+.TravelTSeacher a{text-decoration:none;}
+.TravelTsColse{float:right;padding-top:10px;cursor:pointer;}
+/*2012-3-28新订单管理页面样式*/
+.NewTravel{width:914px;}
+.NewTravelTable tr th{font-weight:bold;border-bottom:2px solid #E7E7E7;padding:5px 0;font-size:13px;text-align:left;}
+.NewTravelTable tr td{padding:15px 0;color:#919191;vertical-align:top;border-bottom:1px solid #E7E7E7;}
+.NewTravelTdImg a{float:left;}
+.NewTravelTdImg p a{word-wrap:break-word;overflow:hidden; width:110px;}
+.NewTravelTdTxt{width:110px;float:left;padding:0 0 0 8px;}
+.NewTravelTdTxt p{padding-bottom:5px;float:left;width:110px;}
+.ColorBlack01{color:#000;padding-bottom:5px;}
+.NewTravelYellowbg,.NewTravelRedbg,.NewTravelGreenbg{background-color:#cccc00;border-radius:3px 3px 3px 3px;height:20px;line-height:20px;color:#fff;padding:1px 5px;text-align:center;display:inline-block;margin-bottom:5px;}
+.NewTravelRedbg{background-color:red;}
+.NewTravelGreenbg{background-color:#00cc66;}
+.m_m_t_l_btns{border:1px solid #C3C3C3;cursor:pointer;position:relative;width:92px;margin:0 auto;}/*2012-10-29修改*/
+.m_m_t_l_02{overflow: hidden;padding:0 2px 0 5px;width:85px;}/*2013-7-26修改*/
+.m_m_t_l_05{overflow: hidden;width:92px;}/*2012-10-29修改*/
+.m_m_t_l_03{display:block;float:left;height:23px;line-height:23px;}
+.m_m_t_l_04{background:url(http://js.youtx.com/payment/images/ListBg.gif) 0 -32px no-repeat;cursor:pointer;display:block;float:right;height:23px;width:15px;}/*2013-7-26修改*/
+.m_m_t_l_06 a, .m_m_t_l_06 a:visited{padding:5px 6px;width:80px;display:block;}/*2012-10-29修改*/
+.m_m_t_l_06 a:hover{color:#fff;background:#0087D2;text-decoration:none;}
+.btn015{margin-bottom:5px;position:relative;}
+/* 2012-03-28联系人页面 */
+.LinkMan { width: 890px; margin-right: auto; margin-left: auto;}
+.LinkManTable02 .LinkManTable02_bottom td { border-width: 0px; border-style: none; }
+.LinkManLeft { width: 362px; float: left; }
+.LinkManTable td { background: url(http://js.youtx.com/payment/images/LinkManHeaderBg.gif) no-repeat center 0px; height: 30px; font-weight: bold; }
+.LinkManTable .LinkMan_TableLeft { background-position:left;}
+.LinkManTable .LinkMan_Tableright { background-position: right; }
+.LinkManTable02 td { text-align: center; height: 30px; border-bottom: 1px dashed #C5C5C5; }
+.LinkManTable02 { border-right: 1px solid #95CDED; border-bottom: 1px solid #95CDED; border-left: 1px solid #95CDED; }
+.LinkManTable td { text-align: center; height: 30px; }
+.LinkManRight { float: right; width: 498px; }
+.LinkManRight h2 { line-height: 30px; font-weight: bold; background: url(http://js.youtx.com/payment/images/LinkManHeaderBg.gif) no-repeat 0px 0px; height: 30px; width: 480px; padding-left: 18px; }
+.LinkManRight ul { width: 496px; height:165px; border-right: 1px solid #95CDED; border-bottom: 1px solid #95CDED; border-left: 1px solid #95CDED; padding-top: 15px;}
+.LinkManRight li { padding-left: 65px; padding-top: 12px; clear:left;}
+.Errorfont { background: url(http://js.youtx.com/images/RoomErrorBtn.gif) no-repeat 0 center; height: 30px; padding-left: 20px; color:#999 }
+.LinkManRight li span {display: inline-block;line-height:30px;height: 30px;float:left;padding-right: 10px;}
+.LinkManRight .input200 {height:28px;width:197px; border:1px solid #7F9DB9; line-height: 28px;float:left ; margin-right:10px; padding-left:3px;}
+.blue_btn115 { background: url(http://js.youtx.com/payment/images/blue_botton115.gif) no-repeat 0px 2px; height: 33px; width: 115px; font: 16px/31px "Arial"; color: #FFF; border-width: 0px; border-style: none; }
+.blue_btn115_box { padding-left: 50px; }
+.LinkMan_ph2 {font-weight: bold;color:#333;line-height:30px;padding-top:10px;}
+.LinkMan_p { line-height: 20px; }
+.LinkMan_p01 { color: #999; padding-left: 13px;line-height:30px;}
+/* 2012-04-20新加 */
+.GusetBtn{margin:10px 0 10px 10px;padding:0px 10px;float:left;display:inline;height:30px;cursor:pointer;}
+/* 2012-5-4 房东和租客取消页面优化修改*/
+.modifyboxTit{font-size:14px;border-bottom:1px solid #cccccc;line-height:30px;height:30px;padding-left:20px;}
+.modifyboxTxt{padding:20px 26px 25px;overflow:hidden;}
+.modifyboxTxtH4{line-height:18px;padding-bottom:8px;}
+.modifyboxTxtTop{background:url(http://js.youtx.com/payment/images/modifyboxTxt_Topbg.gif) top #0089d7 no-repeat;width:841px;height:5px;overflow:hidden;height:30px;line-height:30px;color:#fff;font-weight:bold;padding-left:20px;}
+.modifyboxTxtMidH5{float:left;}
+.modifyboxTxtMid{background-color:#e8faff;width:841px;float:left;padding:0 0 10px 20px;margin-bottom:25px;}
+.modifyboxTxtMidH5 dd{float:left;width:100%;line-height:18px;}/*2012-5-10添加修改*/
+.modifyboxTxtMidH5 dd .SpanTit{width:130px;}/*2012-5-10添加修改*/
+.modifyboxTxtMidH5 dd span{float:left;}/*2012-5-10添加修改*/
+.modifyboxTxtMid .PT10,.ReasonTextarea,.CancelReason,.ReasonButton{width:100%;float:left;}
+.ColorE10279{color:#E10279;}
+.ReasonTextarea{padding:10px 0 30px;}
+.ReasonTextarea Textarea{width:330px;height:88px;resize:none;margin:0 20px 0 0;float:left;border:1px solid #26a3dd;font-size:12px;padding:5px;}
+.ReasonButton input{font-size:12px;cursor:pointer;padding:2px 16px;}
+.modifyboxTxtTop02{background:none;background-color:#e20179;}
+.modifyboxTxtMid02{background-color:#f5dfdf;}
+.modifyboxTxtMid02 dd{width:100%;padding-right:0;}
+.modifyboxTxtMid02 .modifyboxTxtMidH5{padding-top:10px;}
+.TextareaExplain{float:left;width:278px;height:78px;border:1px solid #26a3dd;background-color:#E8FAFF;padding:10px;}
+.TextareaExplain li{line-height:20px;}
+.ColorRed { color: #FF0000; }
+/* 2012-05-15 */
+.TextareaExplain02{float:left;width:480px;height:78px;background-color:#E8FAFF;padding:10px;}
+ /*2012-6-1修改添加收藏与订单号*/
+.TravelTs{position:relative;}
+.TravelTSeacher{position:absolute;top:4px;*top:0px;_top:2px;right:20px;}
+.TravelTSeacherText{border:1px solid #acacac;height:20px;line-height:20px;padding:0 3px;width:120px;font-size:12px;font-family:Arial;}
+.TravelTSeacherBtn{cursor:pointer;margin-left:10px;padding:0 8px;height:21px;}
+/*2012-7-20修改*/
+.mycenter_main{position:relative;}
+.AreaOrder{background-color:#f3f3f3;width:920px;top:0;left:0;position:absolute;float:left;}
+.AreaOrder li{float:left;border-radius:7px 7px 0 0;font-weight:bold;line-height:30px;padding:5px 15px 0;position:relative;}/*2013-7-26修改*/
+.AreaOrder li h3{color:#333;height:30px;line-height:30px;float:left;cursor:pointer;}
+.AreaOrder .AreaOrderCur h3{border-bottom:3px solid #028fd7;font-weight:bold;}
+.AreaOrder .AreaOrderCur{background-color:#fff;}
+.sanjiao{position:absolute;color:#fff;display:none;}
+.AreaOrder .AreaOrderCur .sanjiao{color:#028fd7;left:44%;top:36px;z-index:2;display:block;}/*2013-8-26修改*/
+.DivCB{height:35px;width:914px;overflow:hidden;clear:both;}
+/* 2012-09-11返现提示 */
+.cashBack{background:url(http://js.youtx.com/payment/images/cashBackIcon.gif) no-repeat 0 0;padding:0 0 0 18px;line-height:18px;background-color:#fff;color:red;float:left;text-align:center; margin-top:5px;position:relative; z-index:100}
+.cashBack_bg{ background:url(http://js.youtx.com/payment/images/cashBackIcon_bg.png) no-repeat 0px 0px; padding-left:54px;}  /*2015-03-17增加*/
+.cashBack a{display:inline-block;color:#F00 !important; text-decoration:none; background:url(http://js.youtx.com/payment/images/cashBackIconR.gif) no-repeat right 0;font-family: arial; padding-right:5px;padding-left: 5px;}
+.cashBack a:hover{position:relative; z-index:5}
+.cashBack a span{display:none;position:static; border:none;}
+.NewFuntionText{position:absolute;z-index:0;top:25px;left:0px;display:block;width:300px;line-height:20px;padding:5px 10px; background:#FFF7BC; border:1px solid #D4C79A;display:none; color:#666; text-align:left; height:auto}
+.cashBack a:hover .NewFArrow{position:absolute;z-index:10;top:20px;left:50%; margin-left:-5px;display:block;width:11px;line-height:7px; height:7px;padding:0; background: url(http://js.youtx.com/payment/images/NewFunctionArr.gif) no-repeat 0 0; border:none 0;}
+.NewTravelTable td p{ line-height:18px;}
+/* 2012-12-14修改*/
+.chakanMsg{background:url(http://js.youtx.com/payment/images/X-TravelIcon.gif) no-repeat 0 2px;width:17px;height:17px;display:inline-block;vertical-align: middle;margin-left:5px;}
+.ZukeBeizhu a,.LianXi a{ height:19px; background:url(http://js.youtx.com/payment/images/X-TravelIcon.gif) no-repeat; display:inline-block; width:53px; 
+padding-right:18px;line-height:20px;margin-bottom:5px; text-decoration:none}
+.ZukeBeizhu a{background-position: 0 -17px;}
+.LianXi a{background-position:0 -36px;}
+.ZukeBeizhu,.LianXi{ position:relative; width:71px; margin:0 auto;}
+.Billpop_up{background:#FFF;border:1px solid #9BC3DA;left:-83px;bottom:23px;position: absolute;width:250px; z-index: 5; text-align:left;}
+.Billpop_up h2{ height:30px; background:#E9F1F9;font: 14px/30px "Microsoft yahei";padding-left: 5px; color:#0087D2; border-bottom:1px solid #9BC3DA;}
+.ZukeBeizhu_p{ padding:5px; color:#666;}
+.LianXiPop table td{ padding:2px 0; border:none 0; color:#666;}/*2013-6-9修改*/
+.LianXiPop .LineD td{ border-top:1px dotted #999;}
+/*2013-5-21修改*/
+.CancelPsWp{position:relative;width:110px;}
+.CancelPsWp .Billpop_up{width:170px;bottom:20px;left:-50px;}
+.LianXiPop{padding:5px;line-height:20px;}/*2013-6-9修改*/
+/*2013-5-21ebd修改*/
+/*2013-6-9修改*/
+.NewTravelRedbg02 .Billpop_up{width:170px;color:#919191;left:-15px;bottom:25px;}
+.NewTravelRedbg02{position:relative;height:18px;line-height:18px;}
+.NewTravelRedbg02Img{vertical-align:middle;margin:-5px 0 0 3px;*margin:0px 0 0 3px;}
+/*2013-7-26修改*/
+.AreaOrder .Recycle li{float:right;font-weight:normal;margin-top:3px;}
+.AreaOrder .Recycle .RecycleOrder{background:url(http://js.youtx.com/payment/images/ListBg.gif) 0 11px no-repeat;position:relative;}
+.AreaOrder .Recycle .MyRecycle{background:url(http://js.youtx.com/payment/images/ListBg.gif) 7px -58px no-repeat;}
+.NewTravelTable tr th .m_m_t_l_06{font-weight:normal;border-bottom:1px dotted #c5d7e8;}
+.NewIco{position:absolute;top:-2px;right:4px;}
+/*2013-7-26弹出层修改*/
+.PopupLayer{background-color:black;z-index:99998;filter:Alpha(Opacity=80);/* IE */-moz-opacity:0.7; /* Moz + FF */opacity: 0.7;position:absolute;top:0;left:0;}
+/*新增订单详情、订单修改弹层*/
+/*取消订单*/
+.popCancel,.popModi{background:#fff;border:solid #c8c8c8 1px;width:462px;position:absolute;}
+.popCancel h3,.popModi h3{color:#0087d2;background:#e9f2f9;height:40px;line-height:40px;padding-left:15px;font-size:16px;font-family:"微软雅黑";}
+.popCancel .con,.popModi .con{padding:0 15px 20px;}
+.causeList li,.causeList input,.causeList span{float:left;}
+.causeList input{height:30px;margin-right:10px;}
+.causeList li,.popCancel p{line-height:28px;width:100%;}
+.btnWp{width:130px;margin:10px auto 0;}
+.btnWp input{background:url(http://js.youtx.com/payment/images/btnOffBg.png);width:54px;height:27px;line-height:27px;color:#3a82c7;border:none;font-size:12px;font-family:Microsoft Yahei;font-weight:bold;cursor:pointer;}/*140319修改*/
+.btnWp input.on{background:url(http://js.youtx.com/payment/images/btnOnBg.png);}/*140319修改*/
+.btnWp span{padding-right:12px;}
+/*修改订单*/
+.popModi{height:400px;width:518px; overflow-y:scroll;}
+.warming{color:#ee1a7a;line-height:30px;}
+.warmingBt{line-height:18px;padding:5px 0 5px 60px;}
+.orderNm{line-height:22px;padding:10px 0;}
+.orderInfor,.checkInfor{padding-top:10px;}
+.orderInfor h4,.checkInfor h4{color:#0087d2;font-size:14px;font-weight:bold;line-height:30px;}
+.popModi .tt{ text-align:right; vertical-align:top;width:60px;}
+.popModi td{height:22px;padding:5px 0;line-height:22px;}
+.fdWp span,.fdWp input,.fdWp select{float:left;}
+.orderInfor select{padding:1px;border:solid 1px #ddd;}
+.select1 select{width:184px;}
+.orderInfor #ComeDate,.orderInfor #LeaveDate {background: url("http://js.youtx.com/images/SelectIcobg02.gif") no-repeat scroll 83px 3px #FFFFFF;border: 1px solid #D6D6D6;height:20px;line-height:20px;padding: 0 0 0 8px;width:90px;}
+.inputWp2{float:left;}
+.inputWp2 select{width:40px;}
+.inputWp2 input{width:90px;}
+.priceYF,.priceCk{color:#ee1a7a;font-size:18px;font-weight:bold;font-family:Arial, Helvetica, sans-serif;}
+.priceCkWp{float:left;width:78px; text-align:center;border:solid 1px #b8dff6;margin:0 2px 2px 0;display:inline;}
+.priceCkWp h3{background:#edf6fe;line-height:16px;padding:10px 0;font-size:12px;color:#000;font-family:"宋体";}
+.priceCkWp .con{line-height:20px;padding:10px 0;}
+.priceCk{font-size:12px;}
+.zj span{color:#ee1a7a;font-weight:bold;font-family:Arial, Helvetica, sans-serif;padding:0 10px 0 5px;}
+.checkInfor input{border: 1px solid #D6D6D6;height:20px;line-height:20px;width:130px;padding-left:3px;}
+/*酒店订单详情*/
+.btnArea input{background:url(http://js.youtx.com/payment/images/btnOnBgL.png) no-repeat;width:63px;height:27px;border:none;color:#375C90;cursor:pointer;}/*13-12-27修改*/
+/*13-12-27新增*/
+.popCancel h3{position:relative;}
+.popCancel h3 span{ position:absolute;top:10px;right:10px;cursor:pointer;}
+/*酒店订单详情*/
+.blank_bg .btnArea{padding-top:30px;}
+.btnArea input{background:url(http://js.youtx.com/payment/images/btnOffBgR.png) no-repeat;width:63px;height:27px;border:none;color:#375C90;margin:0 20px;line-height:27px;cursor:pointer;}
+.btnArea input.on{background:url(http://js.youtx.com/payment/images/btnOnBgL.png) no-repeat;}
+.conDiv{margin:20px 0 10px;padding:10px 20px;background-color:#fff6db;border:1px solid #e1e0db;border-radius:5px;}
+.conDiv .conDivP{line-height:20px;color:#333;padding-left:40px;width:auto;}/*2014-3-6修改*/
+.conDivH2{line-height:20px;color:red;background:url(http://js.youtx.com/payment/images/atten.gif) left 50% no-repeat;padding-left:40px;width:auto!important;margin-bottom:15px;}/*2014-3-6修改*/
+/*140311AsiaTravel取消成功提示*/
+.sucCcTt{background:url(http://js.youtx.com/payment/images/wroOrRight.png) no-repeat 78px 4px;font-size:22px;font-family:Microsoft Yahei;text-align:center;line-height:34px;margin-top:40px;}
+p.sucCcCon{font-size:18px;font-family:Microsoft Yahei;width:360px;margin:20px auto 70px;}
+/*140311AsiaTravel取消失败提示*/
+.failCcTt{background:url(http://js.youtx.com/payment/images/wroOrRight.png) no-repeat 68px -38px;}
+.popCancel h3 span.on{background:url(images/closeBtnH.png) no-repeat;}/*140319新增*/
+
+
+
+
+
+
+
+/*2014-9-25修改*/
+.mycenter_main{height:900px;clear:both;width:900px;padding:15px;margin:10px;margin-bottom:20px;background:#fff;border-radius:7px;-moz-border-radius:7px;-webkit-border-radius:7px;box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.15), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;-moz-box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.15), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;-webkit-box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.15), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;overflow:hidden;}
+.CollecBoxS{margin-top:-15px;}
+.CollecBox{border-bottom:1px solid #e3e3e3;padding:15px 0;}
+.detailsListBoxImg{float:left;width:154px;}
+.detailsListBoxDetil{width:410px;float:left;}
+.detailsListPrice{width:145px;}
+.CollecsideBar{float:right;width:180px;}
+.houseTitle{width:100%;overflow:hidden;height:24px;}
+.houseDetil span {float:left;height:24px;line-height:24px;margin-right:5px;}
+.RedFont{color:#e20179!important;}
+.houseTitleDec{color: #008ad9;font-family: Microsoft yahei;font-size:17px;line-height: 24px;}
+.housePrice{font-family: Arial,Helvetica,sans-serif;font-size:28px;font-weight: bold;line-height: 28px;}
+.beforePrice{color:#999;line-height:30px;text-decoration: line-through;}
+.zhekouTime{border: 1px solid #e20179;float:right;height:19px;line-height:20px;padding:0 4px}
+.zhekouFont{background:url(http://js.youtx.com/images/main2014/zhekouFont.png) repeat-x; color:#FFF;height:21px;display:inline-block; float:right; line-height:20px; max-width:78px; overflow:hidden;font-family:Microsoft yahei;}
+.zhekouBg{background:url(http://js.youtx.com/images/main2014/zhekouBg.png) no-repeat;width:4px; height:21px;display:inline-block;float:right;line-height:20px;}
+.Schedule{display:inline-block;margin-bottom:12px;background-color:#068dd8; text-align:center;color:#fff!important;width:90px;line-height:30px;height:30px; font-family:Microsoft yahei;font-size:14px;}
+.Schedule:hover{color:#fff!important; text-decoration:none;}
+.Collection{text-align:center;width:90px;padding:18px 10px 0;float:right; text-decoration:underline;color:#068dd8;}
+.houseNum{background: url(http://js.youtx.com/images/main2014/houseNumBg.png) no-repeat;color: #fff;display: block; font-family: Arial,Helvetica,sans-serif;height: 25px;left: 0;padding-left: 6px; padding-top: 3px;position: absolute;top: 0;width: 25px;}
+.houseAmount{background:#fe9110;
+    color: #fff;
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 3px;
+    position: absolute;
+    right: 2px;
+    text-align: center;
+    bottom:2px;}
+input.textstyle{width:100px; height:20px; line-height:22px;padding:0px 4px;background:#fff url(../images/4KeTdR.gif) 90px center no-repeat;border:1px solid #acacac; color:#666;}/*2015-06-02增加*/
+/*add2016-08-30上传头像提示*/
+.clearfix:after{ clear:both; content:"\200B"; display:block; height:0;}
+.clearfix{ *zoom:1;}
+.clear{ clear:both; font-size:0; height:0; line-height:0; overflow:hidden;}
+
+.fleft { float: left; }
+.fright { float: right; }
+.close_bar_826 { padding-left: 10px; margin: 10px auto 0; width: 934px; height: 30px; line-height: 30px; background: #ffffcc;}
+.close_bar_826 img { margin-right: 13px; margin-top: 11px; cursor: pointer; }
+.warnning_info {padding-left: 20px; font-size: 13px; color: #d90303; height: 30px; line-height: 30px; background: url(http://js.youtx.com/profile/images/icon_warning.png) left 6px no-repeat;}
+    body {
+}

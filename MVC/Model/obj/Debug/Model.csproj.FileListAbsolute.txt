@@ -1,0 +1,10 @@
+E:\@毕业设计\LEANJU\MVC\Model\bin\Debug\LEANJU.Model.dll
+E:\@毕业设计\LEANJU\MVC\Model\bin\Debug\LEANJU.Model.pdb
+E:\@毕业设计\LEANJU\MVC\Model\obj\Debug\LEANJU.Model.dll
+E:\@毕业设计\LEANJU\MVC\Model\obj\Debug\LEANJU.Model.pdb
+E:\@毕业设计\LEANJU\MVC\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\ZB\Desktop\LEANJU\MVC\Model\bin\Debug\LEANJU.Model.dll
+C:\Users\ZB\Desktop\LEANJU\MVC\Model\bin\Debug\LEANJU.Model.pdb
+C:\Users\ZB\Desktop\LEANJU\MVC\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\ZB\Desktop\LEANJU\MVC\Model\obj\Debug\LEANJU.Model.dll
+C:\Users\ZB\Desktop\LEANJU\MVC\Model\obj\Debug\LEANJU.Model.pdb

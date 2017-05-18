@@ -1,0 +1,537 @@
+﻿body { font-family:"Microsoft Yahei"; margin:0 auto; padding:0; color: #333; font-size: 13px; background: #fff;}
+div, form, ul, ol, li, span, p, dl, dt, dd,th,td,select,input,textarea,h1, h2, h3, h4, h5, h6{ margin:0; padding:0;}
+img, a img {border:0; margin:0; padding:0;}
+a{cursor:pointer}
+li { list-style:none;}
+table, td, input {padding:0; font-family:inherit;}
+.bignews { color:#cc0000;}
+.blank8 { height:8px; overflow:hidden; clear:both;}
+.noneBox { display:none; }
+img{vertical-align: top; border: none;}
+cite, em, i, b {font-style: normal;}
+table{border-collapse: collapse;}
+textarea{resize: none; overflow: auto; margin: 0; padding: 0;}
+form,select{margin: 0;}
+.clearfix:after{clear:both; content:"\200B"; display:block; height:0;}
+.clearfix{ *zoom:1;}
+.clear{clear:both; font-size:0; height:0; line-height:0; overflow:hidden;}
+a{text-decoration: none; color: #333;}
+.floatr{float: right;}
+.floatl{float: left;}
+.vslipt{color: #e8e8e8; padding: 0 2px;}
+.ff9913{color: #ff9913;}
+.ListDollar{font-family:"Microsoft Yahei"; font-size: 16px; color: #ff9913;}
+.housePrice{font-size: 26px; color: #ff9913; font-weight: bold;}
+.padl15{padding-left: 15px;}
+.padl5{padding-left: 5px;}
+.mt4{margin-top: 4px;}
+
+
+
+
+/*搜索*/
+.search_rent {background: #fffbf6; padding: 14px 20px; border-top: 1px solid #ff9913;}
+.search_rent .btn_map{float: right; display: block; height: 23px; line-height: 23px; background: url(http://js.youtx.com/images/list2016/icon_map.png) no-repeat; 
+	padding-left: 26px; color: #ff9913; text-decoration: underline; margin: 8px 0 0 18px;}
+.search_rent .btn_search{float: right; display: block; width: 100px; height: 37px; line-height: 37px; border-radius: 3px; background: #ff9913; 
+	font-size:15px; color:#fff; font-weight: bold; text-align:center;}
+.cityBox{position: relative; z-index: 10;}
+.inputCity{width: 64px; height: 25px; line-height: 25px; border: 1px solid #e8e8e8; border-radius: 3px 0 0 3px; cursor: pointer; 
+	padding: 5px 24px 5px 10px; background: #fff url(http://js.youtx.com/images/list2016/icon_jt3.png) no-repeat 72px center; font-size: 13px;}
+
+.Ytxcitybox_text_pd{ padding-left:10px; line-height:29px; color:#ff4401;}
+.Ytxcitybox{width:562px; background-color: #fff; border:1px solid #e8e8e8; border-radius: 3px; display: none; position: absolute; left: -1px; top: 37px;}
+.YtxcityboxTit{background: #e8f0f6 url("http://js.youtx.com/images/citytitle_icon.gif") no-repeat 6px 11px ;border-radius:5px;color:#000;cursor:pointer;height:32px;line-height: 32px;overflow: hidden;padding-left: 22px;}
+.YtxcityboxTit .close{background:url("http://js.youtx.com/images/city_ico_close.gif") no-repeat;float:right;height:14px;margin: 9px 8px 0 0;width: 14px;}
+.citylisTab{background:url("http://js.youtx.com/images/citytab_line.png") repeat-x left bottom;
+border-radius:5px; height:32px; padding:0 8px 1px; width: auto;}
+.citylisTab span{width:90px;border-top:1px solid #fff;cursor:pointer;display:block;float:left;height:24px;line-height:24px;margin-right:1px;margin-top:8px;overflow:hidden;text-align:center;}
+.citylisTab .Cur {border-bottom:2px solid #63afee;font-weight: bold;height:22px;}
+.citylisTabUl{padding:8px;}
+.categoriesTit,.categoriesTxt{float:left;}
+.categoriesTit{padding-left: 33px;color:#008ad9;float:left;height:24px;line-height:24px;}
+.categoriesTxt a{ text-align:center; display:inline-block;height:24px;line-height:24px;overflow:hidden;width:91px; float:left;padding-bottom:5px;color:#464849;}
+.citybox_shu{z-index:100; position: absolute; top: 37px; background-color: #fff; width: 508px; border:1px solid #e8e8e8;
+	 border-radius:5px;}
+.citywordTit {border-bottom: 1px solid #bdbdbd;height: 32px;line-height: 32px;padding: 0 10px;}
+.citywordUl li {border-bottom: 1px dotted #bdbdbd;}
+.citywordUl .On {background-color: #85c7f0;}
+.citywordUl .On a {color: #fff !important;}
+.citywordUl li a { display: block;padding: 5px 10px;color: #008ad9;}
+.ColorFF4401 {color: #ff4401;}
+.addressBox{position: relative;}
+.inputAdd{width: 254px; height: 25px; line-height: 25px; padding: 5px 10px 5px 15px; border: 1px solid #e8e8e8; border-radius: 5px; 
+ margin-left: -5px; font-size: 13px;}
+.checkIn{position: relative; margin-left: 10px;}
+.time_rent {width: 134px; height: 25px; line-height: 25px; border: 1px solid #e8e8e8; padding: 5px 33px 5px 48px;
+ background: #fff url(http://js.youtx.com/images/list2016/icon_date.png) no-repeat 185px center; cursor: pointer; border-radius: 3px; }
+.TxtHint, .timeText {font-size: 14px; left: 10px; position: absolute; top: 9px; z-index: 2;}
+.checkOut{position: relative; margin-left: 10px;}
+.staffNum{position: relative; margin-left: 10px; *margin-left: 5px!important;}
+.menuInput{display: block; border: 1px solid #e8e8e8; border-radius: 3px; font-size: 13px; background: #fff url(http://js.youtx.com/images/list2016/icon_jt3.png) no-repeat 105px center; 
+	padding: 5px 30px 5px 10px; width: 85px; height: 25px; line-height: 25px; cursor: pointer;}
+.TheTotal{background: #FFF; border:solid 1px #e8e8e8; height: 185px; overflow-y: scroll; position: absolute; top:37px; z-index:100; left: -1px;
+	width: 129px;}
+.TheTotal li{border-bottom: 1px dotted #D1D1D1;color: #999;cursor: pointer;line-height:30px;padding:0 10px;}
+.TxtHintNum{ font-size:14px; position: absolute; left: 38px; top: 10px; width: 63px; display: inline-block; text-align: center;}
+/*位置模拟下拉*/
+.dropDown{cursor:pointer; padding:0 5px;float:left;}
+.dropText{max-width:93px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; line-height:23px; display:inline-block; float:left;}
+
+/*内容*/
+.wrap{width: 100%; background: #f2f2f2;}
+.content{width: 1180px; padding: 20px 0 22px 0; margin: 0 auto;}
+.qSearch{margin-top: 20px; background: #fff; }
+.search_type{padding: 0 20px;}
+.item-wrap{padding: 8px 0; font-size: 13px; color: #333; border-bottom: 1px solid #e8e8e8;}
+.item-tit,.sel-tit{color: #7d7d7d; float: left; margin-right: 15px; font-size: 13px;}
+.item-wrap dl,.item-wrap dt,.item-wrap dd{float: left;}
+.item-wrap dt{margin-right: 20px;}
+.item-wrap dt a{display: block; height: 20px; line-height: 20px; border-radius: 3px; text-align: center; padding: 0 13px; 
+	float: left;}
+.item-wrap dt.active a{background: #2b98dd; color: #fff;}
+.locationBox{position: relative;}
+.locationBox dd{width: 100px; padding-right: 10px; position: relative;}
+.item-wrap .locationBox dd i{width: 11px; height: 6px; vertical-align: middle; background: url(http://js.youtx.com/images/list2016/icon_jt5.gif) no-repeat; 
+	position: absolute; left: 5px; top: 25px;}
+.locationBox dd.w120{width: 120px;}
+.locationBox dd a{display: inline-block; color: #333; vertical-align: middle; vertical-align: -3px;
+	background: url(http://js.youtx.com/images/list2016/icon_jt3.png) no-repeat right center; padding-right: 15px; }
+.locationBox dd .cur{background: url(http://js.youtx.com/images/list2016/icon_jt4.png) no-repeat right center;}
+.dropCont{position: absolute; border: 1px solid #89c0e2; border-radius: 3px; width: 890px; background: #fff; 
+	left: 72px; top: 30px; padding: 0 20px;  z-index: 998;}
+.dropArea{padding: 10px 0;}
+.dropArea li{float: left;}
+.dropArea li a{display: block; float: left; width: 70px; text-align: left; height: 28px; line-height: 28px;
+	overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #333; padding-right: 25px;}
+.dropTrade{padding: 10px 0;}
+.dropTrade li{float: left;}
+.dropTrade li a{display: block; float: left; width: 120px; text-align: left; height: 28px; line-height: 28px;
+	overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #333; padding-right: 25px;}
+.dropTrade li i,.dropArea li i{display: inline-block; width: 12px; height: 12px; line-height: 12px; color: #ff9913;
+ font-size: 13px; text-align: center; margin-right: 10px;margin-bottom: 3px;}
+.dropSubway-line{padding: 10px 0; border-bottom: 1px solid #e8e8e8;}
+.dropSubway-line li a{display: block; float: left; width: 70px; text-align: left; height: 28px; line-height: 28px;
+	overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #333; padding-right: 25px;}
+.dropCont li.cur a{color:#2b98dd; font-weight: bold;}	
+.dropSubway-line .cur{color: #2b98dd;}
+
+.item-wrap .item dd{padding-right: 10px; width: 100px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 20px;}
+.item dd a{color: #333;}
+.item dd.cur a{color: #2b98dd; font-weight: bold;}
+.priceInput{border: 1px solid #e8e8e8; border-radius: 3px; padding: 5px; height: 15px; line-height: 15px; width: 60px; margin: 0 12px; outline: none;}
+.item-wrap dd i{display: inline-block; width: 12px; height: 12px; background: url(http://js.youtx.com/images/list2016/icon_check1.png) no-repeat; 
+	color: #333; margin: 0 10px 0 0; vertical-align: -1px; *vertical-align: middle;}
+.item-wrap dd .checked{background-position: 0 -12px;}
+.item-wrap .more .downjt{padding: 0 22px 0 5px; height: 8px; background: url(http://js.youtx.com/images/list2016/icon_more.png) no-repeat right center; color: #2b98dd;}
+.item-wrap .more dd{position: relative; z-index: 100;}
+.item-wrap .more .moreWrap{width: 360px; border: 1px solid #2b98dd; border-radius: 5px; background: #fff; padding: 8px;
+ position: absolute; left: -245px; top: 28px; z-index: 998;}
+ .List_PopArrow{width: 18px; height: 10px; background: url(http://js.youtx.com/images/main2014/List_PopArrow.jpg) no-repeat;
+  position: absolute; top: -10px; right: 106px;}
+.moreWrap .moreInfo{position: relative;}
+.moreInfo dl{margin-top: 10px;}
+.moreInfo dd{padding: 5px 0; width: 120px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.moreInfo a{color: #333;}
+.List_Pop_close{width: 7px; height: 7px; background: url(http://js.youtx.com/images/main2014/List_PopClose.gif) no-repeat;
+position: absolute; right: 10px; top: 4px; cursor: pointer;}
+
+
+.search_sel{padding: 15px 20px; font-size: 13px;}
+.sel-cont{float: left;}
+.sel-cont a{margin-right: 10px; display: block; float: left;}
+.sel-cont .del_cont{border-radius: 3px; border: 1px solid #ff9913; height: 18px; line-height: 18px; 
+	background: url(http://js.youtx.com/images/list2016/del_cls.png) no-repeat right 0; padding: 0 25px 0 5px; color: #7d7d7d;}
+.sel-cont .del_all{background: url(http://js.youtx.com/images/list2016/icon_del.png) no-repeat 0 2px; padding-left: 24px; color: #ff9913; height: 20px; line-height: 20px;}
+
+/*明星房东*/
+.starOwner{width: 100%; height: 170px; margin-top: 20px; background: #fff url(http://js.youtx.com/images/list2016/bg_star.png) no-repeat;}
+.star-cont{margin-left: 42px; position: relative; width: 1138px; height: 100%;}
+.star-cont .prev,.star-cont .next{display: block; width: 13px; height: 24px; position: absolute; top: 50%; margin-top: -12px;}
+.star-cont .prev{background: url(http://js.youtx.com/images/list2016/icon_prev.png) no-repeat; left: 18px;}
+.star-cont .next{background: url(http://js.youtx.com/images/list2016/icon_next.png) no-repeat; right: 20px;}
+.star-cont .star-listwrap{position: relative; padding: 20px 0; margin: 0 67px 0 58px; height: 130px; width: 1013px; overflow: hidden;}
+.star-cont .star-list{float: left; height: 130px;}
+.star-list .list-item{float: left;}
+.list-item .pic-star{width: 200px; height: 130px; float: left; overflow: hidden; margin-right: 20px;}
+.list-item .star-text{float: left; width: 242px;}
+.star-text h3{font-size: 16px; font-weight: 400; padding-bottom: 42px;}
+.star-text p{width: 100%; height: 35px; font-size: 14px; line-height: 35px; position: relative; }
+.star-text .comment{text-indent: 15px;}
+.star-text i{display: inline-block; width: 10px; height: 10px; position: absolute;}
+.star-text .tag_l{left: 0; top: 5px; background: url(http://js.youtx.com/images/list2016/tag_l.png) no-repeat;}
+.star-text .tag_r{right: 0; bottom: 5px; background: url(http://js.youtx.com/images/list2016/tag_r.png) no-repeat;}
+.star-list .line{width:1px; height: 110px; float: left; margin: 10px 48px 10px 40px; background: #e8e8e8;}
+/*品牌推荐*/
+.brandBox{width: 100%; height: 240px; margin-top: 20px; background: #fff url(http://js.youtx.com/images/list2016/pic_brand.png) no-repeat;}
+.brand-cont{margin-left: 42px; position: relative; width: 1138px; height: 100%;}
+.brand-cont .prev,.brand-cont .next{display: block; width: 13px; height: 24px; position: absolute; top: 50%; margin-top: -12px;}
+.brand-cont .prev{background: url(http://js.youtx.com/images/list2016/icon_prev.png) no-repeat; left: 18px;}
+.brand-cont .next{background: url(http://js.youtx.com/images/list2016/icon_next.png) no-repeat; right: 20px;}
+.brand-list{padding: 20px 0; margin:0 50px 0 58px; height: 200px; width: 1030px; overflow: hidden; position: relative;}
+.brand-left,.brand-right{float: left;}
+.brand-left a{display: block; width: 300px; height: 200px; position: relative;}
+.brand-left .price{display: block; padding: 0 8px; height: 30px; line-height: 30px; text-align: center; color: #fff; 
+	position: absolute; right: 0; bottom: 0; cursor: pointer;
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000', endColorstr='#66000000');}
+:root .brand-left .price {filter:none;background-color:rgba(0,0,0,0.4);}
+.brand-right{width: 730px; overflow: hidden;}
+.brand-info{padding-left: 20px;}
+.brand-info h3{float: left; font-size: 18px; max-width: 450px; white-space: nowrap; overflow: hidden;}
+.brand-info h3 a{color: #2b98dd;} 
+.brand-info .price{float: right; color: #7d7d7d; font-size: 13px;}
+.brand-right p{padding-left: 20px; font-size: 14px; color: #4d4d4d; height: 25px; line-height: 25px;}
+.morebrand{float: right; color: #2b98dd; text-decoration: underline; font-size: 13px;}
+.brand-img{padding-top: 37px;}
+.brand-img li{float: left; margin-left: 20px; width: 162px; height: 110px;}
+.brand-img a{display: block; width: 162px;; height: 110px; position: relative;}
+.brand-img .price{display: block; padding: 0 5px; height: 30px; line-height: 30px; text-align: center; color: #fff; 
+	position: absolute; right: 0; bottom: 0; cursor: pointer;
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000', endColorstr='#66000000');}
+:root .brand-img .price {filter:none;background-color:rgba(0,0,0,0.4);}
+
+/*短租房源、长租房*/
+.houseWrap{margin-top: 20px; padding: 0 20px; background: #fff; width: 1140px;}
+.houseWrap .title{border-bottom: 1px solid #e8e8e8; height: 56px;}
+.houseWrap .title .tit_hw {display: block; float: left; margin-right: 20px; padding: 0 20px; font-size: 16px; color: #333; height: 54px; line-height: 54px;
+	border-bottom: 2px solid #fff;}
+.houseWrap .title .cur{color: #2b98dd; border-bottom: 2px solid #2b98dd; }
+.filterBox{padding: 18px 0 8px;}
+.result-count{float: right;}
+.result-count a{color: #7d7d7d;}
+.result-count .c2b98dd{color: #2b98dd;}
+.rankBox,.rankBox dl,.rankBox dl dt,.rankBox dl dd{float: left;}
+.rankBox dl { padding-left: 20px;}
+.rankBox dl dd{margin-left: 17px;}
+.rankBox a{color: #333;}
+.rankBox .c2b98dd{color: #2b98dd;}
+.rankBox i{display: inline-block; width: 10px; height: 13px; line-height: 13px; margin-left: 5px; 
+	background: url(http://js.youtx.com/images/list2016/icon_arrow.png) no-repeat;}
+.rankBox .arrowUp{background-position: 0 0;}
+.rankBox .arrowDown{background-position: -11px 0;}
+.rankBox .arrowUpb{background-position: -21px 0 ;} 
+.rankBox .arrowDownb{background-position: -31px 0;}
+
+.houseList ul li{padding: 20px 0; border-bottom: 1px solid #e8e8e8;}
+.houseList ul li:hover{background: #fffdfa;}
+.houseList .house-img{float: left; position: relative;}
+.house-img a{display: block; width: 300px; height: 200px; position: relative;}
+.house-img .pic-num,.house-img .pic-head{display: block; position: absolute;}
+.house-img .pic-num{height: 30px; line-height: 30px; padding: 0 10px; text-align: center; font-size: 16px; color: #fff; left: 0; top: 0; cursor: pointer;
+filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000', endColorstr='#66000000');}
+:root .house-img .pic-num {filter:none;background-color:rgba(0,0,0,0.4);}
+.house-img .pic-head{display: block; width: 70px; height: 70px; border: 2px solid #fff; border-radius: 50%; overflow: hidden; position: absolute; bottom: 0; right: -6px;}
+.house-img .pic-head img{width: 70px; height: 70px;}
+.houseInfo{float: left; padding-left: 15px; width: 810px;}
+.house-tit{position: relative;}
+.house-tit h3{float: left; font-size: 18px;max-width:330px;max-height:20px;line-height:20px;overflow:hidden;}
+.house-tit h3 a{color: #333; padding-right: 15px;}
+.house-tit .qset{display: inline-block; width: 56px; height: 20px; background: url(http://js.youtx.com/images/list2016/icon_qset.png) no-repeat; vertical-align: -2px;}
+.house-price{float: right; position: relative; border-bottom: 1px dashed #ff9913;}
+
+.PriceBox{position: absolute; top: 36px; right: 0px; padding: 5px 10px; background: #fff; z-index: 999; display: block; border: 1px solid #ff9913; border-radius: 3px;}
+.innerPBox .date_title li{ float:left; height: 38px; line-height: 38px; width:65px; text-align:center; padding: 0; border-bottom: none;}
+.date_details ul{border-bottom: none;}
+.innerPBox .date_details li{ float:left; width: 65px; padding: 14px 0; border-top: solid 1px #e8e8e8; border-bottom: none;}
+.PriceDate {display: block; padding-bottom: 5px; text-align: center; color: #7d7d7d;}
+.PriceNum {color: #ff9913; display: block; text-align: center;}
+.PBoxStra{width: 13px; height: 7px; background: url(http://js.youtx.com/images/list2016/icon_jt2.png) no-repeat; position: absolute; right: 34px; top: -7px;}
+
+.tag-sale{position: absolute; left: -100px; top: -1px;}
+.tag-sale .btn-sale{display: inline-block; height: 30px; line-height: 27px; padding: 0 8px; border-radius: 3px; background: #ff9913; color: #fff; 
+position: relative;}
+.btn-sale .ListDollar{color: #fff; font-size: 13px; padding-left: 5px; font-weight: 400;}
+.btn-sale span{font-size: 20px; font-weight: bold;}
+.btn-sale i{display: inline-block; width: 6px; height: 9px; background: url(http://js.youtx.com/images/list2016/icon_jt.png) no-repeat; 
+	position: absolute; top: 50%; margin-top: -4px; right: -6px;}
+.houseInfo-left{float: left; max-width: 575px; overflow: hidden;}
+.houseInfo-left p{font-size: 14px; height: 25px; line-height: 25px; white-space: nowrap; overflow: hidden; max-width: 575px;}
+
+.distance span{display: inline-block; margin-left: 10px; width: 57px; height: 20px; vertical-align: middle;
+ background: url(http://js.youtx.com/images/list2016/icon_real.png) no-repeat;}
+.distance .real_house{background-position: 0 0;}
+.distance .real_pic{background-position: 0 -20px;}
+.distance .real_product{background-position: 0 -40px;}
+
+.houseInfo-right{float: right; text-align: right; margin-top: 4px;}
+.houseInfo-right .cost{margin-top: 4px; color: #7d7d7d;}
+.houseInfo-right .through{text-decoration: line-through;}
+.discount{margin-top: 5px;}
+.discount-price{padding-bottom: 5px; font-size: 14px; color: #4d4d4d;}
+.agentInfo{font-size: 16px;}
+
+.agentInfo .tel{font-style: normal; margin-left: 15px; background: url(http://js.youtx.com/images/list2016/icon_tel.png) no-repeat; padding: 0 10px 0 25px; 
+	font-size: 17px; color: #ff9913; font-weight: bold;}
+.agentInfo span{display: inline-block; width: 81px; height: 20px; margin-left: 10px; vertical-align: -3px;
+	background: url(http://js.youtx.com/images/list2016/icon_staus.png) no-repeat; }
+.agentInfo .store{background-position: 0 0;}
+.agentInfo .safe{background-position: 0 -20px;}
+.agentInfo .owner{background-position: 0 -40px;}
+.pagebar{padding-top: 20px; padding-bottom:20px;}
+.pagebar-left{float: left;}
+.pagebar-left .c2b98dd{color: #2b98dd;}
+.pagebar-left p{padding-bottom: 15px; color: #7d7d7d;}
+.btn_publish{display: inline-block; height: 20px; line-height: 20px; padding: 0 6px; background: #ff9913; color: #fff; 
+	text-align: center; border-radius: 3px;}
+.pagebar-right{float: right; margin-top: 10px;}
+.pagebar-right a,.pagebar-right .cur{display: inline-block; height: 20px; line-height: 20px; padding: 0 8px; margin-right: 10px;}
+.pagebar-right a{color: #4d4d4d;}
+.pagebar-right .cur{background: #2b98dd; color: #fff;}
+.pagebar-right .points{margin-right: 10px;}
+.pagebar-right .prev{padding-right: 20px;}
+.pagebar-right .prev1{padding-right: 20px; color: #d8d8d8;}
+.pagebar-right .next{padding-left: 20px;}
+.pagebar-right .next1{padding-left: 20px; color: #d8d8d8;}
+
+/* .pagebar-right .points{display: inline-block; padding: 5px 0;} */
+
+/*品牌店铺热卖*/
+.bottom{width: 100%; background: #fff;}
+.bottomInfo{width: 1180px; margin: 0 auto;}
+.bottomInfo .title{height: 56px; border-bottom: 1px solid #e8e8e8; margin-bottom: 20px;}
+/*.bottomInfo .title a{ border-bottom: 2px solid #fff; color: #333; display: block; float: left; font-size: 16px; height: 54px;
+line-height: 54px; margin-right: 30px;}
+.bottomInfo .title .cur{border-bottom: 2px solid #2b98dd; color: #2b98dd;}*/
+.bottomInfo .title .more{display: block; font-size: 14px; color: #2b98dd; margin-top: 32px;}
+.title-tab .s1,.title-tab .s2{float: left; cursor: pointer; margin-right: 38px; font-size: 16px; height: 54px; line-height: 54px; border-bottom: 2px solid #fff;}
+.title-tab .cur{color: #2b98dd; border-bottom: 2px solid #2b98dd;}
+.bottomInfo .zu_long{float: left; padding-left: 20px; font-size: 16px; line-height: 54px;}
+.bottomInfo .zu_long a{color: #333;}
+.scroll_wrap{width: 1180px; position: relative; }
+.scroll_wrap .prev,.scroll_wrap .next{display: block; width: 38px; height: 40px; position: absolute; top: 75px;}
+.scroll_wrap .prev{background: url(http://js.youtx.com/images/list2016/page.gif) no-repeat 0 0; left: -52px;}
+.scroll_wrap .next{background: url(http://js.youtx.com/images/list2016/page.gif) no-repeat 0 -40px; right: -52px;}
+.scroll_list{width: 1180px; overflow: hidden;}
+.scroll_wrap ul{overflow: hidden;}
+.scroll_wrap ul li{ position: relative; float: left; margin-right: 20px; width: 280px;}
+.scroll_wrap ul li .lt_cutoff { position: absolute; top: 0; right: 0; width: 89px; height: 33px; line-height: 33px; background: url(http://js.youtx.com/images/list2016/btm_bg.png) no-repeat; text-align: center;}
+.scroll_wrap ul li .lt_cutoff .ltc_n { font-weight: bold; font-size: 20px; color: #ffffff; }
+.scroll_wrap ul li .lt_cutoff .ltc_t { color: #ffffff; font-size:14px; font-weight: normal;}
+.scroll_wrap ul li .lt_cutoff .ltc_my { color: #ffffff; font-size:16px; font-weight: normal;}
+.scroll_wrap ul li .lt_cutoff .ltc_cny { color: #ffffff; font-size:12px; font-weight: normal;}
+.scroll_wrap li a{display: block; width: 280px; height: 187px;}
+.scroll_wrap h3{font-size: 15px; margin-top: 20px; font-weight: 400;}
+.scroll_wrap p{margin-top: 8px; font-size: 14px; color: #7d7d7d;}
+.scroll_wrap em{font-style: normal; font-weight: bold; font-size: 18px;}
+
+
+/*右边的悬浮框*/
+.suspenBox{ position: fixed; right: 30px; bottom: 40px; width: 142px; z-index: 99;}
+.suspensionL,.suspensionR{ float: left; width:100px; background: url("http://js.youtx.com/images/default2016/suspensionBg.png") repeat-x 0 0; }
+.suspensionR{width: 42px; height: 40px; background-position: right 0; display: none;}
+.suspensionR a{ display:block; width: 100%;  height: 100%; background: url("http://js.youtx.com/images/default2016/indexIconBig.png") no-repeat 12px -1145px ;}
+
+.suspensionL li.suspenLi{ position: relative; width: 50px; height: 40px; float: left;  background:url("http://js.youtx.com/images/default2016/indexIconBig.png") no-repeat 12px -1030px ; cursor: pointer;}
+.suspensionL li.suspenLi2{ background-position: 12px -1071px; }
+.suspensionL li.suspenLi2 a{ width: 100%; height: 100%; display: block;}
+.suspensionL li.suspenLi3{ background-position: 12px -1109px;}
+.suspensionL li.cur{ background-color: #828282;}
+.suspenPop1{ display: none; width: 190px; height: 260px; position: absolute; left: 0; bottom:44px; background: #fff; box-shadow:0px 0px 4px 1px rgba(0,0,0,0.15);-webkit-box-shadow:0px 0px 4px 1px rgba(0,0,0,0.15);-moz-box-shadow:0px 0px 4px 1px rgba(0,0,0,0.15); }
+.suspenPopTit1{ font-size: 15px; background: #2b98dd; height: 40px; line-height: 40px; color: #fff; text-align: center; }
+.suspenPopTxt1{line-height: 20px;}
+.suspenPopTxt1 ul{ height: 190px; overflow: auto; }
+.suspenPopTxt1 li{border-bottom:1px solid #ebebeb;  padding: 12px 12px 10px; }
+.suspenPopTxt1 li h3{ color: #2b98dd; font-size: 12px; position: relative;}
+.suspenPopTxt1 li .closeBtn{ width: 20px; height: 20px; position: absolute; right: 0px; top:6px; background: url("http://js.youtx.com/images/default2016/indexIconBig.png") no-repeat 0 -1200px ;  }
+.suspenPopTxt1 .seeMoreMsg{text-align: right; padding: 0 10px;}
+
+.suspenPop3{  height: 165px; left: -100px; text-align: center; padding: 10px 0; }
+.suspenPop3 h2{ font-size: 14px; line-height: 34px;}
+.suspenPop3 p{ line-height: 30px;}
+
+.suspenBox{ right:0; bottom:100px; right:0; position: fixed; width:50px; z-index: 99; display: none;}
+.suspenBox .suspensionL{width:50px; float:none; position: relative; background: url(http://js.youtx.com/images/list2016/suspenChange.png) repeat-y 0 0; height: 80px;}
+.suspenBox .suspensionL .suspenLi{position: absolute; width:40px;}
+.suspenBox .suspensionL .suspenLi2{left:0; top:0;}
+.suspenBox .suspensionL .suspenLi3{left:0; top:40px;}
+.suspenBox .suspensionR{float:none; width:50px; background: url(http://js.youtx.com/images/list2016/suspenChange.png) repeat-y 0 0; left:0; display: block;}
+.suspenPop3{ left:-190px; top:-40px;}
+.suspenBox .suspensionR a{ margin-left:-2px;}
+.suspenBox .suspensionL .suspenLi{ position: absolute; width:40px;}
+
+/*日期控件*/
+#calprev.disabled { cursor: default;background-position: 0 -19px;}
+#calnext.disabled {cursor: default;background-position: -23px -19px;}
+.calendarBox {top: 272px; position: absolute; width: 348px; padding: 4px 50px 20px; border: 1px solid #ccc; font-family: Tahoma; background: #FFF; z-index: 10000;}
+.calPrev,.calNext {width: 22px; height: 19px; background: url(http://js.youtx.com/images/default2016/cal_btn.png) no-repeat; cursor: pointer;}
+.calPrev em,.calNext em {display: none;}
+.calPrev {position: absolute; left: 16px; top: 96px; background-position: 0 0;}
+.calNext {position: absolute; right: 16px; top: 96px; background-position: -23px 0;}
+.calendar { float: left; width: 164px; padding: 0 5px; font-family: "微软雅黑";}
+.calendar h2 {font-size: 13px; padding: 8px 0 6px; text-align: center; color: #464849;}
+.calendar table { width: 164px;}
+.calendar th { background: #FFFFFF; width: 23px; text-align: center;  color: #464849; vertical-align: middle; height: 26px; line-height: 24px; 
+	border: none; font-size: 12px;}
+.calendar td {text-align: center; border: 1px solid #e0e0e0; height: 20px; line-height: 20px; vertical-align: middle;}
+.calendar td.disabled { background: #e9e9e9; cursor: default;}
+.calendar td.current {color: #fff; background: #ff9913; height: 18px; line-height: 18px; border: none;}
+.calendar td.delete { color: #ccc; text-decoration: line-through; cursor: default;}
+.calendar td:hover {color: #f60;}
+.calendar td.disabled:hover {color: #ccc;}
+
+/*seo推广*/
+.hothouse{width: 1180px; margin: 40px auto 20px auto;}
+.hotAbout {background-color: #f9f9f9; border: 1px solid #e3e3e3; color: #999; margin-top: 20px; padding: 15px 24px; vertical-align: middle;}
+.searchByKey { padding: 10px 0;}
+.keyIndex a { border: 1px solid #d7d7d7; color: #464849; display: inline-block; font-family: Microsoft yahei; height: 21px;
+    line-height: 21px; margin: 0 8px 6px 0; text-align: center; width: 21px;}
+.keyIndex a.keyIndexChecked{background:#2fadf5; color:#fff; border:solid 1px #2d8dd0;}
+.keyResult {height: 40px; overflow: hidden;}
+.keyResult a:hover{color:#008ad9!important;}
+.keyResult a { color: #999; display: inline-block; margin-right: 10px; line-height:22px;}
+.FooterCity { line-height: 22px; margin: 0 auto; padding-bottom: 10px;}
+.FooterCity{margin:0 auto; padding-bottom:10px;line-height:22px;}
+.FooterCity dd{float:left;width:65px;}
+.FooterCity dt{float:left;width:890px;overflow:hidden;color:#cfcfcf;}
+.FooterCity dt a{padding-right:1px;padding-left:1px;white-space:nowrap;color:#999!important;}
+.FooterCity dt a:hover{color:#008ad9!important;}
+.FooterDesktop{display:inline-block;}
+.FooterNet{padding-bottom:20px;}
+.FooterCityUl li.clearfix{overflow:hidden;height:24px;color:#999;}
+.W{width:100%;}
+.CityTit{float:left;margin-left:-100%;font-weight:bold;margin-top:3px;}
+.CityTxt{padding:0 50px 0 75px;overflow:hidden;}
+.CityTxt a{margin-right:10px; white-space:nowrap;display:inline-block;color:#999!important; font-size:13px; margin-top:3px;font-family:"Microsoft Yahei";}
+.CityTxt a:hover{color:#008ad9!important;}
+.CityTxtBtn{float:left;margin-left:-40px;width:40px;cursor:pointer;font-weight:bold;}
+
+/*copyright*/
+#Footer { margin: 0 auto; padding: 20px 0 50px; width: 1180px;}
+.footer_link { line-height: 20px; text-align: center;}
+.footer_link a { color: #464849; display: inline-block; margin: 0 8px;}
+.FooterDec { padding-top: 3px; text-align: center;}
+.FooterDec a { color: #464849;}
+.FooterDecSpan { float: left; font-family: Arial,Helvetica,sans-serif; line-height: 20px; padding-top: 3px;}
+.FooterDec span { display: inline-block;}
+.Dec { background-color: #fff; border: 1px solid #ddd; display: inline-block; float: left; height: 38px; margin: 3px 0 0 6px;text-align: center; width: 104px;}
+
+/*修改10-20*/
+.mt10 { margin-top: 10px; }
+.mt2 { margin-top: 2px; }
+.mt5 { margin-top: 5px; }
+.mt9 { margin-top: 10px; }
+.mt16 { margin-top: 16px; }
+.mt20 { margin-top: 20px;}
+.PriceBox { display:none;}
+.houseWrap { margin-top: 0; }
+.houseWrap .title .result-count a {font-size: 13px; }
+.houseWrap .title .result-count { line-height: 54px; }
+.houseWrap.w850 { padding: 0 10px 0 0; width: 850px; float: left; }
+.houseWrap.w850 .house-img a.b_pic{display: block; width: 280px; height: 190px; position: relative;}
+.houseInfo{float: right; padding-left: 0; width: 550px;}
+
+.house-price { margin-top: -7px;}
+.qset { 
+	display: inline-block;
+	margin-top: 3px;
+	width: 56px;
+	height: 20px;
+	background: url(http://js.youtx.com/images/list2016/icon_qset.png) no-repeat;
+	vertical-align: -2px;}
+.house-img .pic-head {right: -31px; bottom: -25px;}
+.houseInfo-left p{font-size: 14px; height: 25px; line-height: 25px; white-space: nowrap; overflow: hidden; width: 550px;}
+.house-price .cost { color: #7d7d7d; text-decoration: line-through; }
+.house-price .cost span { color: #7d7d7d;}
+.houseInfo {position: relative; }
+.houseInfo-right { position: absolute; right: 0; top: 71px;}
+.agentInfo span { margin-left: 0;}
+.house-img p { position: absolute; bottom: 5px; left: 0; padding-left: 10px; }
+.house-img p a { float: left; margin-right: 10px; display: block; width: 56px; height: 18px; line-height: 18px; background: url(http://js.youtx.com/images/list2016/bg_10_20.png) repeat-x; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; color: #ffffff; }
+.house-img p a.icon_yz img { margin: 3px 4px 0 5px;  }
+.house-img p a.icon_sp img { margin: 3px 4px 0 5px;  }
+.house-img p a.icon_jp img { margin: 2px 4px 0 5px;  }
+.discount{margin-top: 20px;}
+.PriceBox { top: 41px; }
+.houseList ul li { padding: 29px 0;}
+.PriceBox { display: none; }
+.pagebar-left{ padding-left: 10px;}
+.title-tab .s2 { padding: 0 20px;}
+
+.s_right { float: right; width: 300px; }
+.map_box { position: relative; }
+.map_box a { display: block; }
+.map_box .blue_lct {  position: absolute; left: 50px; top: 125px; width:20px; height:39px; background: url(http://js.youtx.com/images/list2016/location.png) no-repeat; color: #fff; text-align: center;}
+.map_box .red_lct { position: absolute; left: 210px; top: 62px; padding-top: 4px; width:25px; height:33px; background: url(http://js.youtx.com/images/list2016/location2.png) no-repeat; color: #fff; text-align: center;}
+.mxfd_box { position: relative; margin-top: 24px; }
+.mxfd_box .mxfd_icon { position: absolute; left: 10px; top: 10px; }
+.mxfd_box .mxfd_txt { position: absolute; width: 290px; top: 215px; left: 0; height: 50px; padding:10px 0 0 10px; background: url(http://js.youtx.com/images/list2016/bg_d8.png) repeat-x;}
+.mxfd_box .mxfd_plc {font-size: 16px; }
+.mxfd_box .mxfd_dot { position: absolute; bottom: 10px; right: 10px; margin-left: -150px; }
+.mxfd_box .mxfd_dot a { float: left; margin-right: 10px; display: block; width: 8px; height: 8px; background: url(http://js.youtx.com/images/list2016/mdot1.png) no-repeat; }
+.mxfd_box .mxfd_dot a.cur { background: url(http://js.youtx.com/images/list2016/mdot2.png) no-repeat; }
+.r_links { background: #ffffff; margin-top: 24px; }
+.r_links .r_info {  border-bottom: 1px solid #f2f2f2; }
+.r_links .r_info:last-child {  border-bottom: none; }
+.r_links .r_info .r_l_l { padding:18px 0 19px 10px; float: left; width:56px; text-align: center; }
+.r_links .r_info .r_l_l p { padding:4px 0 0 4px; color: #2b98dd;}
+.r_links .r_info .rll_link { float: left; width: 234px; padding-top: 20px; line-height:26px;}
+.r_links .r_info .rll_link a { max-width:200px;height:20px;overflow:hidden;display:block;font-size:12px;}
+.ppdprm { margin-top: 24px;  padding: 0 6px; width: 288px; background: #ffffff;}
+.ppdprm .ppdprm_tit { padding: 18px 0 14px 0; height: 16px; line-height: 16px;font-size: 16px; }
+.ppdprm p span.floatr { font-size: 12px; }
+.ppdprm p span.ListDollar { font-size: 12px; }
+.ppdprm_link { margin-top: 2px; float: left; color: #2b98dd; }
+.b_18 { font-size: 16px; font-weight: bold; color:#ff9913; }
+.g_txt1020 { padding-bottom: 18px; }
+.g_txt1020 span { color: #999999; }
+.ppdprm_l1 { padding: 10px 0 5px 0; }
+.s_right .r_adv { display: block; margin-top: 24px; }
+.jpczf {   padding: 0 6px; margin-top: 24px; width: 288px; background: #fff; }
+.jpczf .jpczf_tit { padding: 14px 0 18px; height: 16px; line-height: 16px;}
+.jpczf .jpczf_tit .floatl { font-size: 16px; }
+.jpczf .jpczf_tit .floatr { color: #2b98dd; font-size: 12px; }
+.jpczf .czf_block { padding-bottom: 20px; }
+.jpczf .czf_block .czf_fl2{ padding-left: 6px; }
+.jpczf .czf_block .czf_fl2 .czf_name { color: #999999; font-size: 12px; height: 34px; line-height: 34px; }
+.jpczf .czf_block .czf_a{ max-width: 130px; overflow: hidden;display: block; height: 24px; line-height: 24px; color: #2b98dd; }
+.jpczf .czf_block .ListDollar {font-size: 12px;}
+.jpczf .czf_block .t12 {font-size: 12px; color: #666666;}
+/*End 修改10-20*/
+
+.pop_11_3 { z-index: 100;
+    position: absolute;
+    top: 37px;
+	left:-6px;
+    background-color: #fff;
+    width: 508px;
+    border: 1px solid #bcbeb3;
+    border-top: none;
+    box-shadow: 0 5px 12px #666;
+    -moz-box-shadow: 0 5px 12px #666;
+    -webkit-box-shadow: 0 5px 12px #666;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;}
+
+.pop_11_3.left_num { left:1px; }
+
+/*修改11-9*/
+.btm_p_ a { margin-right: 10px; overflow:hidden;float: left; display: block; width: 80px; height: 18px; line-height: 18px; font-size: 13px; color: #2b98dd; border: 1px solid #80c0e7; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;  }
+.btm_p_ a em {float: left; display: block; height: 18px;  }
+.btm_p_ a .w_18 { width: 18px; }
+.btm_p_ a .store1 { width: 18px; background: url("http://js.youtx.com/images/list2016/icon_pym.png") #2b98dd 0 0 no-repeat; }
+.btm_p_ a .safe1 { width: 18px; background: url("http://js.youtx.com/images/list2016/icon_pym.png") #2b98dd -18px 0 no-repeat; }
+.btm_p_ a .owner1 { width: 18px; background: url("http://js.youtx.com/images/list2016/icon_pym.png") #2b98dd -36px 0 no-repeat; }
+.btm_p_ a .pym_txt { width: 62px; text-align: center; }
+/*End 修改11-9*/
+
+
+
+.houseInfo { width: 530px;}
+.house-img .b_pic img {width:300px; height:200px;}
+.s_right { padding-top: 15px;}
+.condition_describe dl dt a { padding: 0 13px; background: #2b98dd; height: 20px; line-height: 20px; border-radius: 3px;} 
+.condition_title {padding:0;}
+.scroll_wrap ul li { padding-bottom: 15px;}
+
+
+/* 12-5修改 */
+
+.house-price .cost {margin-top: 4px; text-align: right;  color: #7d7d7d; text-decoration: line-through; }
+.mix12_5 { position: absolute; top: 36px; right:0; width: 118px; height: 200px; }
+.qset {margin-top: 14px; }
+.house-tit .qset  {margin-left: 62px;}
+.discount {text-align: right; margin-top: 10px;}
+
+/*20170307*/
+.mobcheck{float:right; background:url(http://js.youtx.com/images/list2016/mobcheck.png) no-repeat;padding-left:13px;margin-top:3px;}
